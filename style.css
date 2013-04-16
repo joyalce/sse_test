@@ -1,0 +1,181 @@
+nav, header, section, footer {display: block;}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'IM Fell Double Pica', 'Garamond', 'Times New Roman', serif;
+	background: #000011;
+	color: #cccccc;
+	text-align: left;
+	font-size: medium;
+}
+
+a:link {
+	color: #cccccc;
+	text-decoration: underline;
+}
+	
+a:visited {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+	
+a:active {
+	text-decoration: none;
+}
+
+img {border: none;}
+
+.italique {font-style: italic;}
+
+p span.lettrine {
+	background: url(images/lettrine.png) no-repeat;
+	float: left;
+	text-shadow: #333 0px 0px 0px;
+	font-style: normal;
+}
+
+p:hover span.lettrine {
+	font-family: 'Garamond','Times New Roman','Times', serif;
+	font-weight: bold;
+	text-shadow: #333 3px 3px 1px;
+}
+
+section {
+	padding: 1em 2em 0em;
+}
+
+header {
+	padding: 0em 2em;
+	text-align: center;
+}
+	
+#histoire {
+	width: 100%;
+	height: 50%;
+	padding: 0px;
+	margin: 0px;
+	overflow-y: auto;
+	background: url(images/etoiles.png) repeat fixed;
+}
+
+#titre {font-variant: small-caps;}
+
+#introduction {
+	font-style:italic;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sig {
+	font-family: 'Tangerine', 'Marker Felt', 'Comic Sans MS', cursive;
+	font-size: x-large;
+	text-align: right;
+}
+
+.chanson {
+	text-align: center;
+	font-style: italic;
+}
+
+
+#mediasociaux {
+	margin: 25px auto;
+	text-align: center;
+}
+
+#mediasociaux div {
+	width: 150px;
+	display: inline-block;
+}
+
+#copyright {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	padding-bottom: 50px;
+}
+
+#copyright h4 {
+	margin-bottom: 0;
+}
+
+#copyright p, #copyright ul {
+	margin-top: 0;
+}
+
+#copyright p {
+	margin-left: 2em;
+}
+
+
+
+#gMaps_canvas {
+	background: #000011;
+	width: 100%;
+	height: 50%;
+	padding: 0em;
+	margin: 0px;
+}
+
+
+#canoe {
+	z-index: 2;
+	position: fixed;
+	height: 280px;
+	width: 490px;
+	top: 38%;
+	left: 100%;
+	margin-left: -500px;
+}
+
+
+
+@media print {
+
+	body {
+		background: #ffffff;
+		color: #000000;
+		margin: 1cm;
+	}
+	
+	h1, h2, p, a {
+		color: #000000;
+		opacity: 1;
+	}
+	
+	a {text-decoration: underline;}
+
+	p span.lettrine {
+		background: url(images/lettrine.png) no-repeat;
+		font-family: 'Garamond','Times New Roman','Times', serif;
+		font-style: normal;
+		font-weight: bold;
+		text-shadow: #333 3px 3px 1px;
+		margin-right: 10px;
+    	padding-left: 0px;
+    	padding-bottom: 6px;
+    	width: 0.66em;
+    	font-size: 500%;
+	}
+	
+	#histoire {
+		height: auto;
+		overflow-y: auto;
+		background: none;
+	}
+	
+	#gMaps_canvas, #canoe, #mediasociaux {display: none;}
+}
